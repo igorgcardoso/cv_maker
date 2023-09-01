@@ -1,0 +1,299 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-12 22:19+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/core/admin.py:80
+msgid "Level"
+msgstr ""
+
+#: src/core/admin.py:82
+msgid "Native"
+msgstr ""
+
+#: src/core/models.py:23
+msgid "The Email must be set"
+msgstr ""
+
+#: src/core/models.py:45
+msgid "first name"
+msgstr ""
+
+#: src/core/models.py:46
+msgid "middle name"
+msgstr ""
+
+#: src/core/models.py:47
+msgid "last name"
+msgstr ""
+
+#: src/core/models.py:48
+msgid "birth date"
+msgstr ""
+
+#: src/core/models.py:49
+msgid "email address"
+msgstr ""
+
+#: src/core/models.py:50
+msgid "tel"
+msgstr ""
+
+#: src/core/models.py:51
+msgid "linkedin"
+msgstr ""
+
+#: src/core/models.py:52
+msgid "github"
+msgstr ""
+
+#: src/core/models.py:53 src/core/models.py:164 src/core/models.py:215
+#: src/core/models.py:250 src/core/models.py:295
+msgid "created at"
+msgstr ""
+
+#: src/core/models.py:54 src/core/models.py:165 src/core/models.py:216
+#: src/core/models.py:251 src/core/models.py:296
+msgid "updated at"
+msgstr ""
+
+#: src/core/models.py:75
+msgid "user"
+msgstr ""
+
+#: src/core/models.py:76
+msgid "users"
+msgstr ""
+
+#: src/core/models.py:106 src/core/models.py:129 src/core/models.py:143
+#: src/core/models.py:182 src/core/models.py:196 src/core/models.py:233
+#: src/core/models.py:268
+msgid "name"
+msgstr ""
+
+#: src/core/models.py:107
+msgid "city"
+msgstr ""
+
+#: src/core/models.py:108
+msgid "country iso"
+msgstr ""
+
+#: src/core/models.py:108
+msgid "country code in ISO3 format. Example: BRA for Brazil"
+msgstr ""
+
+#: src/core/models.py:111 src/core/models.py:132 src/core/models.py:146
+#: src/core/models.py:185 src/core/models.py:199 src/core/models.py:236
+#: src/core/models.py:271
+#, python-format
+msgid "%(name)s"
+msgstr ""
+
+#: src/core/models.py:118
+msgid "education institution"
+msgstr ""
+
+#: src/core/models.py:119
+msgid "education institutions"
+msgstr ""
+
+#: src/core/models.py:135
+msgid "education degree"
+msgstr ""
+
+#: src/core/models.py:136
+msgid "education degrees"
+msgstr ""
+
+#: src/core/models.py:149
+msgid "education course"
+msgstr ""
+
+#: src/core/models.py:150
+msgid "education courses"
+msgstr ""
+
+#: src/core/models.py:161 src/core/models.py:213
+msgid "start date"
+msgstr ""
+
+#: src/core/models.py:161
+msgid "The year when you started the course"
+msgstr ""
+
+#: src/core/models.py:162 src/core/models.py:214
+msgid "end date"
+msgstr ""
+
+#: src/core/models.py:162
+msgid "The year when you finished the course"
+msgstr ""
+
+#: src/core/models.py:163
+msgid "is completed"
+msgstr ""
+
+#: src/core/models.py:171 src/core/models.py:172
+msgid "education"
+msgstr ""
+
+#: src/core/models.py:188
+msgid "experience company"
+msgstr ""
+
+#: src/core/models.py:189
+msgid "experience companies"
+msgstr ""
+
+#: src/core/models.py:202
+msgid "experience role"
+msgstr ""
+
+#: src/core/models.py:203
+msgid "experience roles"
+msgstr ""
+
+#: src/core/models.py:222
+msgid "experience"
+msgstr ""
+
+#: src/core/models.py:223
+msgid "experiences"
+msgstr ""
+
+#: src/core/models.py:239
+msgid "skill"
+msgstr ""
+
+#: src/core/models.py:240
+msgid "skills"
+msgstr ""
+
+#: src/core/models.py:249 src/core/models.py:293
+msgid "level"
+msgstr ""
+
+#: src/core/models.py:257
+msgid "user skill"
+msgstr ""
+
+#: src/core/models.py:258
+msgid "user skills"
+msgstr ""
+
+#: src/core/models.py:274 src/core/models.py:325
+msgid "language"
+msgstr ""
+
+#: src/core/models.py:275
+msgid "languages"
+msgstr ""
+
+#: src/core/models.py:294
+msgid "is native"
+msgstr ""
+
+#: src/core/models.py:306
+msgid "native"
+msgstr ""
+
+#: src/core/models.py:310
+msgid "user language"
+msgstr ""
+
+#: src/core/models.py:311
+msgid "user languages"
+msgstr ""
+
+#: src/core/models.py:321
+msgid "English"
+msgstr ""
+
+#: src/core/models.py:322
+msgid "Portuguese (Brazil)"
+msgstr ""
+
+#: src/core/models.py:328
+#, python-format
+msgid "%(language)s"
+msgstr ""
+
+#: src/core/models.py:331
+msgid "cv language"
+msgstr ""
+
+#: src/core/models.py:332
+msgid "cv languages"
+msgstr ""
+
+#: src/core/receivers.py:12
+msgid "Your cv is awaiting for you"
+msgstr ""
+
+#: src/core/templates/cv/index.html:26
+msgid "years"
+msgstr ""
+
+#: src/core/templates/cv/index.html:30
+msgid "Telephone"
+msgstr ""
+
+#: src/core/templates/cv/index.html:45
+msgid "Academic Background"
+msgstr ""
+
+#: src/core/templates/cv/index.html:51
+msgid "em"
+msgstr "in"
+
+#: src/core/templates/cv/index.html:60 src/core/templates/cv/index.html:79
+msgid "Present"
+msgstr ""
+
+#: src/core/templates/cv/index.html:67
+msgid "Professional Experience"
+msgstr ""
+
+#: src/core/templates/cv/index.html:90
+msgid "Skills"
+msgstr ""
+
+#: src/core/templates/cv/index.html:106
+msgid "Languages"
+msgstr ""
+
+#~ msgid "Desenvolvedor"
+#~ msgstr "Developer"
+
+#~ msgid "Estagiário Desenvolvedor"
+#~ msgstr "Developer Intern"
+
+#~ msgid "Universidade Federal de Viçosa"
+#~ msgstr "Federal University of Viçosa"
+
+#~ msgid "Bacharelado"
+#~ msgstr "Bachelor"
+
+#~ msgid "Ciência da Computação"
+#~ msgstr "Computer Science"
+
+#~ msgid "Português"
+#~ msgstr "Portuguese"
+
+#~ msgid "Inglês"
+#~ msgstr "English"

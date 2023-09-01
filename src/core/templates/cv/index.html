@@ -1,0 +1,161 @@
+{% load i18n %} {% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'css/styles_out.css' %}"
+    />
+    <title></title>
+  </head>
+  <body class="text-slate-700 bg-white font-mono">
+    <!-- Data -->
+    <header class="w-full flex py-4 justify-between items-center">
+      <!-- Name and profession -->
+      <section class="w-full flex-col justify-center items-center gap-0.5">
+        <strong class="text-xl font-bold leading-relaxed">{{ user }}</strong>
+        <br />
+        <span class="text-base font-normal leading-7">{{ role }}</span>
+        <br />
+        <span class="text-xs font-light">{{ brief }}</span>
+      </section>
+      <!-- Contact -->
+      <section class="py-4 justify-center items-center gap-4">
+        <a
+          href="email:{{ user.email }}"
+          class="text-xs font-light leading-none font-mono"
+          >{{ user.email }}</a
+        >
+        <span class="text-xs font-light"
+          >{{ user.city }}, {{ user.city.state.country }}</span
+        >
+        <!-- Personal link -->
+        <!-- <a href=""></a> -->
+        <!-- Social -->
+        <div class="gap-2 justify-center items-center">
+          {% for social in socials %}
+          <a
+            href="{{ social.url }}"
+            target="_blank"
+            class="text-xs font-light leading-3 flex gap-2 items-center"
+          >
+            <img
+              src="{{ social.icon_url }}"
+              alt="{{ social.name }}"
+              class="w-3 h-3"
+            />
+            <span>{{ social.username }}</span>
+          </a>
+          {% endfor %}
+        </div>
+      </section>
+    </header>
+    <!-- Skills -->
+    <section class="justify-start items-start gap-5 mb-5">
+      <h2 class="text-sm font-bold leading-none mb-3">
+        {% translate "Skills" %}
+      </h2>
+      <div class="grid grid-rows-5">
+        {% for skill in skills %}
+        <span class="text-zinc-800 bg-slate-400 rounded text-xs font-light leading-4">{{skill}}</span>
+        {% endfor %}
+      </div>
+    </section>
+    <div class="flex w-full justify-between">
+      <!-- Experience -->
+      <section class="py-1 flex-col w-1/2 justify-start items-start">
+        <h2 class="text-sm font-bold leading-none mb-3">
+          {% translate "Experience" %}
+        </h2>
+        <div class="grid gap-10">
+          {% for experience in experiences %}
+          <div class="grid justify-start items-start gap-4">
+            <section class="w-full grid justify-between items-center mt-4">
+              <span class="text-sm font-medium">{{ experience.company }}</span>
+              <span class="text-xs font-light leading-3"
+                >{{ experience.role }}</span
+              >
+              <span class="text-[8px] font-light leading-3"
+                >{{ experience.start_date|date:"b Y" }} - {{ experience.end_date|date:"b Y"|default:_("Present") }}</span
+              >
+            </section>
+            <section class="mt-1">
+              <span class="text-xs font-light leading-3">
+                {{ experience.description }}
+              </span>
+            </section>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+      <div>
+        <!-- Education -->
+        <section class="grid py-1 w-1/2 justify-center items-start gap-4">
+          <h2 class="text-sm font-bold leading-none">
+            {% translate "Education" %}
+          </h2>
+          {% for education in educations %}
+          <div class="flex-col w-full justify-center items-start gap-0.5">
+            <span class="text-xs font-light leading-3"
+              >{{ education.institution.acronym }}</span
+            >
+            <br />
+            <div class="">
+              <span class="text-sm font-medium">{{ education.course }}</span>
+              <br />
+              <span class="text-[8px] font-light font-mono leading-3"
+                >{{ education.start_date|date:"b Y" }} - {{ education.end_date|date:"b Y"|default:_("Present") }}</span
+              >
+            </div>
+          </div>
+          {% endfor %}
+        </section>
+        <!-- Languages -->
+        <section class="py-1 justify-center items-start gap-4">
+          <h2 class="text-sm font-bold leading-none">
+            {% translate "Languages" %}
+          </h2>
+          {% for language in languages %}
+          <div class="flex justify-evenly items-center gap-0.5">
+            <div class="bg-slate-400 rounded px-2">
+              <span class="text-xs font-light leading-3">{{ language }}</span>
+            </div>
+            <div class="flex-col flex justify-center items-start">
+              <span class="text-xs font-bold leading-3"
+                >{{ language.level }}</span
+              >
+              <span class="text-xs font-light leading-4"
+                >{{ language.get_level_display }}</span
+              >
+            </div>
+          </div>
+          {% endfor %}
+        </section>
+      </div>
+    </div>
+    <!-- Projects -->
+    <div></div>
+  </body>
+</html>

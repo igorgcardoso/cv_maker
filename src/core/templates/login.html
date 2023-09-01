@@ -1,0 +1,51 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'css/styles_out.css' %}"
+    />
+  <title>Login</title>
+</head>
+<body class="flex h-screen w-screen bg-slate-800 items-center justify-center">
+  <form class="flex flex-col gap-4" method="post" action="{% url "login" %}">
+    {% csrf_token %}
+    {% for field in form %}
+      <div class="flex flex-col gap-2">
+        <label for="{{ field.id_for_label }}" class="font-medium text-lg leading-relaxed">{{ field.label }}</label>
+        {{ field }}
+        {% if field.help_text %}
+          <small>{{ field.help_text }}</small>
+        {% endif %}
+        {% for error in field.errors %}
+          <small class="text-red-500">{{ error }}</small>
+        {% endfor %}
+      </div>
+    {% endfor %}
+    <button
+      type="submit"
+      class="p-2 bg-green-700 font-bold text-lg leading-relaxed text-white hover:opacity-70 transition-opacity"
+    >
+      {% translate "Log in"%}
+    </button>
+  </form>
+</body>
+</html>

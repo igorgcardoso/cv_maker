@@ -1,0 +1,66 @@
+{% load static %} {% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'css/styles_out.css' %}"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Initial count
+        updateCheckboxCount();
+
+        // Update count when checkboxes are clicked
+        $('form input[type="checkbox"]').on("change", function () {
+          updateCheckboxCount();
+        });
+
+        function updateCheckboxCount() {
+          var selectedCount = $('form input[type="checkbox"]:checked').length;
+          $("#checkbox-count").text(selectedCount);
+        }
+      });
+    </script>
+    <title>Home</title>
+  </head>
+  <body class="bg-slate-800 flex items-center justify-center py-10">
+    <form
+      method="post"
+      action=""
+      class="flex flex-col gap-4"
+    >
+      {% csrf_token %} {{ form }}
+      <div class="flex gap-2">
+        <span>{% translate "Selected:" %}</span>
+        <span id="checkbox-count">0</span>
+      </div>
+      <button
+        type="submit"
+        class="p-2 bg-green-700 font-bold text-lg leading-relaxed text-white hover:opacity-70 transition-opacity"
+      >
+        {% translate "Generate" %}
+      </button>
+    </form>
+  </body>
+</html>

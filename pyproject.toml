@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "cv-maker"
+version = "0.1.0"
+description = ""
+authors = ["Igor Cardoso <igorgcardoso7@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "cv_maker" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = { extras = ["bcrypt"], version = "^4.2.1" }
+dynaconf = { extras = ["yaml"], version = "^3.1.12" }
+weasyprint = "^58.1"
+django-modeltranslation = "^0.18.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

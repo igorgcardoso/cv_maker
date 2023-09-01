@@ -1,0 +1,410 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-19 15:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: src/core/admin.py:35 src/core/admin.py:57
+msgid "Description"
+msgstr "Descrição"
+
+#: src/core/admin.py:89
+msgid "Level"
+msgstr "Nível"
+
+#: src/core/admin.py:91
+msgid "Native"
+msgstr "Nativo"
+
+#: src/core/admin.py:123
+msgid "Date range"
+msgstr "Intervalo de datas"
+
+#: src/core/forms.py:49
+msgid "You must select 10 skills"
+msgstr "Você deve selecionar 10 habilidades"
+
+#: src/core/models.py:22
+msgid "The Email must be set"
+msgstr "O Email deve ser definido"
+
+#: src/core/models.py:44
+msgid "first name"
+msgstr "primeiro nome"
+
+#: src/core/models.py:45
+msgid "middle name"
+msgstr "nome do meio"
+
+#: src/core/models.py:46
+msgid "last name"
+msgstr "sobrenome"
+
+#: src/core/models.py:47
+msgid "birth date"
+msgstr "data de nascimento"
+
+#: src/core/models.py:48
+msgid "email address"
+msgstr "endereço de email"
+
+#: src/core/models.py:49
+msgid "tel"
+msgstr "telefone"
+
+#: src/core/models.py:52 src/core/models.py:222 src/core/models.py:278
+#: src/core/models.py:312 src/core/models.py:363 src/core/models.py:406
+#: src/core/models.py:501
+msgid "created at"
+msgstr "criado em"
+
+#: src/core/models.py:53 src/core/models.py:223 src/core/models.py:279
+#: src/core/models.py:313 src/core/models.py:364 src/core/models.py:407
+#: src/core/models.py:502
+msgid "updated at"
+msgstr "atualizado em"
+
+#: src/core/models.py:74
+msgid "user"
+msgstr "usuário"
+
+#: src/core/models.py:75
+msgid "users"
+msgstr "usuários"
+
+#: src/core/models.py:111 src/core/models.py:124 src/core/models.py:143
+#: src/core/models.py:165 src/core/models.py:188 src/core/models.py:202
+#: src/core/models.py:244 src/core/models.py:258 src/core/models.py:296
+#: src/core/models.py:329 src/core/models.py:389 src/core/models.py:441
+#: src/core/models.py:497
+msgid "name"
+msgstr "nome"
+
+#: src/core/models.py:117
+msgid "country"
+msgstr "país"
+
+#: src/core/models.py:118
+msgid "countries"
+msgstr "iso do países"
+
+#: src/core/models.py:125
+msgid "abbreviation"
+msgstr "abreviação"
+
+#: src/core/models.py:132
+msgid "state"
+msgstr "estado"
+
+#: src/core/models.py:133
+msgid "states"
+msgstr "estados"
+
+#: src/core/models.py:154
+msgid "city"
+msgstr "cidade"
+
+#: src/core/models.py:155
+msgid "cities"
+msgstr "cidades"
+
+#: src/core/models.py:166
+msgid "acronym"
+msgstr "acrônimo"
+
+#: src/core/models.py:177
+msgid "education institution"
+msgstr "instituição de ensino"
+
+#: src/core/models.py:178
+msgid "education institutions"
+msgstr "instituições de ensino"
+
+#: src/core/models.py:194
+msgid "education degree"
+msgstr "grau de educação"
+
+#: src/core/models.py:195
+msgid "education degrees"
+msgstr "graus de educação"
+
+#: src/core/models.py:208
+msgid "education course"
+msgstr "curso de educação"
+
+#: src/core/models.py:209
+msgid "education courses"
+msgstr "cursos de educação"
+
+#: src/core/models.py:220 src/core/models.py:276 src/core/models.py:499
+msgid "start date"
+msgstr "data de início"
+
+#: src/core/models.py:220
+msgid "The year when you started the course"
+msgstr "O ano em que você começou o curso"
+
+#: src/core/models.py:221 src/core/models.py:277 src/core/models.py:500
+msgid "end date"
+msgstr "data de término"
+
+#: src/core/models.py:221
+msgid "The year when you finished the course"
+msgstr "O ano em que você terminou o curso"
+
+#: src/core/models.py:233 src/core/models.py:234
+msgid "education"
+msgstr "educação"
+
+#: src/core/models.py:250
+msgid "experience company"
+msgstr "empresa de experiência"
+
+#: src/core/models.py:251
+msgid "experience companies"
+msgstr "empresas de experiência"
+
+#: src/core/models.py:264
+msgid "experience role"
+msgstr "cargo de experiência"
+
+#: src/core/models.py:265
+msgid "experience roles"
+msgstr "cargos de experiência"
+
+#: src/core/models.py:275 src/core/models.py:498
+msgid "description"
+msgstr "descrição"
+
+#: src/core/models.py:285
+msgid "experience"
+msgstr "experiência"
+
+#: src/core/models.py:286
+msgid "experiences"
+msgstr "experiências"
+
+#: src/core/models.py:302
+msgid "skill"
+msgstr "habilidade"
+
+#: src/core/models.py:303
+msgid "skills"
+msgstr "habilidades"
+
+#: src/core/models.py:319
+msgid "user skill"
+msgstr "habilidade do usuário"
+
+#: src/core/models.py:320
+msgid "user skills"
+msgstr "habilidades do usuário"
+
+#: src/core/models.py:335 src/core/models.py:427
+msgid "language"
+msgstr "idioma"
+
+#: src/core/models.py:336
+msgid "languages"
+msgstr "idiomas"
+
+#: src/core/models.py:352
+msgid "Beginner"
+msgstr "Iniciante"
+
+#: src/core/models.py:353
+msgid "Elementary"
+msgstr "Básico"
+
+#: src/core/models.py:354
+msgid "Intermediate"
+msgstr "Intermediário"
+
+#: src/core/models.py:355
+msgid "Upper Intermediate"
+msgstr "Intermediário Superior"
+
+#: src/core/models.py:356
+msgid "Advanced"
+msgstr "Avançado"
+
+#: src/core/models.py:357
+msgid "Proficient"
+msgstr "Proficiente"
+
+#: src/core/models.py:361
+msgid "level"
+msgstr "nível"
+
+#: src/core/models.py:362
+msgid "is native"
+msgstr "é nativo"
+
+#: src/core/models.py:374
+msgid "native"
+msgstr "nativo"
+
+#: src/core/models.py:378
+msgid "user language"
+msgstr "idioma do usuário"
+
+#: src/core/models.py:379
+msgid "user languages"
+msgstr "idiomas do usuário"
+
+#: src/core/models.py:396
+msgid "role"
+msgstr "função"
+
+#: src/core/models.py:397
+msgid "roles"
+msgstr "funções"
+
+#: src/core/models.py:413
+msgid "user role"
+msgstr "função do usuário"
+
+#: src/core/models.py:414
+msgid "user roles"
+msgstr "funções do usuário"
+
+#: src/core/models.py:423
+msgid "English"
+msgstr "Inglês"
+
+#: src/core/models.py:424
+msgid "Portuguese (Brazil)"
+msgstr "Português (Brasil)"
+
+#: src/core/models.py:433
+msgid "cv language"
+msgstr "cv idioma"
+
+#: src/core/models.py:434
+msgid "cv languages"
+msgstr "cv idiomas"
+
+#: src/core/models.py:442
+msgid "base url"
+msgstr "base url"
+
+#: src/core/models.py:443
+msgid "icon url"
+msgstr "url do ícone"
+
+#: src/core/models.py:444
+msgid "suffix"
+msgstr "sufixo"
+
+#: src/core/models.py:450
+msgid "social network"
+msgstr "rede social"
+
+#: src/core/models.py:451
+msgid "social networks"
+msgstr "redes sociais"
+
+#: src/core/models.py:460
+msgid "username"
+msgstr "nome de usuário"
+
+#: src/core/models.py:484
+msgid "user social network"
+msgstr "rede social do usuário"
+
+#: src/core/models.py:485
+msgid "user social networks"
+msgstr "redes sociais do usuário"
+
+#: src/core/models.py:512
+msgid "project"
+msgstr "projeto"
+
+#: src/core/models.py:513
+msgid "projects"
+msgstr "projetos"
+
+#: src/core/templates/cv/index.html:78
+msgid "Skills"
+msgstr "Habilidades técnicas"
+
+#: src/core/templates/cv/index.html:90
+msgid "Experience"
+msgstr "Experiência"
+
+#: src/core/templates/cv/index.html:101 src/core/templates/cv/index.html:129
+msgid "Present"
+msgstr "Presente"
+
+#: src/core/templates/cv/index.html:117
+msgid "Education"
+msgstr "Educação"
+
+#: src/core/templates/cv/index.html:138
+msgid "Languages"
+msgstr "Idiomas"
+
+#: src/core/templates/home.html:55
+msgid "Selected:"
+msgstr "Selecionado:"
+
+#: src/core/templates/home.html:62
+msgid "Generate"
+msgstr "Gerar"
+
+#: src/core/templates/login.html:47
+msgid "Log in"
+msgstr "Entrar"
+
+#~ msgid "linkedin"
+#~ msgstr "linked-in"
+
+#~ msgid "github"
+#~ msgstr "GitHub"
+
+#~ msgid "country code in ISO3 format. Example: BRA for Brazil"
+#~ msgstr "código do país no formato ISO3. Exemplo: BRA para Brasil"
+
+#~ msgid "%(name)s"
+#~ msgstr "%(name)s"
+
+#~ msgid "is completed"
+#~ msgstr "está completo"
+
+#~ msgid "%(language)s"
+#~ msgstr "%(language)s"
+
+#~ msgid "Your cv is awaiting for you"
+#~ msgstr "Seu currículo está aguardando por você"
+
+#~ msgid "years"
+#~ msgstr "anos"
+
+#~ msgid "Telephone"
+#~ msgstr "Telefone"
+
+#~ msgid "Academic Background"
+#~ msgstr "Formação Acadêmica"
+
+#~ msgid "em"
+#~ msgstr "em"
+
+#~ msgid "Professional Experience"
+#~ msgstr "Experiência Profissional"
+
+#~ msgid "Brazil"
+#~ msgstr "Brasil"
