@@ -1,0 +1,8 @@
+# Ignore dynaconf secret files
+.secrets.*
+tmp
+__pycache__
+*.sqlite3
+.vscode
+.venv
+node_modules

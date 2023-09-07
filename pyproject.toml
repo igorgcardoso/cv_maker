@@ -12,6 +12,8 @@ django = { extras = ["bcrypt"], version = "^4.2.1" }
 dynaconf = { extras = ["yaml"], version = "^3.1.12" }
 weasyprint = "^58.1"
 django-modeltranslation = "^0.18.11"
+gunicorn = "^21.2.0"
+whitenoise = "^6.5.0"
 
 
 [build-system]
