@@ -6,13 +6,10 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 ENV DJANGO_ENV production
 
-RUN curl -sSL https://install.python-poetry.org | python3 -
+COPY requirements.txt .
 
-RUN export PATH="$PATH:$HOME/.local/bin"
-
-COPY pyproject.toml poetry.lock ./
-
-RUN poetry install --no-dev --no-root
+RUN pip install --upgrade pip && \
+  pip install -r requirements.txt
 
 COPY . .
 
