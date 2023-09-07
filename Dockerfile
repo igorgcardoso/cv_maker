@@ -2,6 +2,10 @@ FROM python:3.11.1-slim
 
 WORKDIR /app
 
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+ENV DJANGO_ENV production
+
 RUN curl -sSL https://install.python-poetry.org | python3 -
 
 COPY pyproject.toml poetry.lock ./

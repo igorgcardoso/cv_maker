@@ -4,12 +4,13 @@ global:
     - ["pt-br", "Portuguese (Brazil)"]
   MODELTRANSLATION_DEFAULT_LANGUAGE: "pt-br"
 
-development:
-  EMAIL_BACKEND: django.core.mail.backends.smtp.EmailBackend
-  EMAIL_HOST: localhost
-  EMAIL_PORT: 1025
-
 production:
   STORAGES:
     staticfiles:
       BACKEND: whitenoise.storage.CompressedManifestStaticFilesStorage
+  DATABASES:
+    default:
+      ENGINE: django.db.backends.postgresql
+  DEBUG: False
+  ALLOWED_HOSTS:
+    - ...
