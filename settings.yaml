@@ -13,4 +13,4 @@ production:
       ENGINE: django.db.backends.postgresql
   DEBUG: False
   ALLOWED_HOSTS:
-    - ...
+    - https://cv-maker-4btk.onrender.com
