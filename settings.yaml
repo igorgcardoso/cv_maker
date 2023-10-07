@@ -1,16 +1,18 @@
 global:
   LANGUAGES:
-    - ["en", "English"]
-    - ["pt-br", "Portuguese (Brazil)"]
-  MODELTRANSLATION_DEFAULT_LANGUAGE: "pt-br"
-
+    - - en
+      - English
+    - - pt-br
+      - Portuguese (Brazil)
+  MODELTRANSLATION_DEFAULT_LANGUAGE: pt-br
 production:
-  STORAGES:
-    staticfiles:
-      BACKEND: whitenoise.storage.CompressedManifestStaticFilesStorage
+  ALLOWED_HOSTS:
+    - https://cv-maker-4btk.onrender.com
   DATABASES:
     default:
       ENGINE: django.db.backends.postgresql
-  DEBUG: False
-  ALLOWED_HOSTS:
-    - https://cv-maker-4btk.onrender.com
+      PORT: 5432
+  DEBUG: false
+  STORAGES:
+    staticfiles:
+      BACKEND: whitenoise.storage.CompressedManifestStaticFilesStorage
