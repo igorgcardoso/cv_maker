@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-7+my*yejsca15je7@3!k3r1k1sp*!5pspmo_jr=4+$_^&@+wph
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://cv-maker-4btk.onrender.com']
 
 AUTH_USER_MODEL = 'core.User'
 
