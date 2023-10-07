@@ -7,7 +7,7 @@ global:
   MODELTRANSLATION_DEFAULT_LANGUAGE: pt-br
 production:
   ALLOWED_HOSTS:
-    - https://cv-maker-4btk.onrender.com
+    - cv-maker-4btk.onrender.com
   DEBUG: false
   STORAGES:
     staticfiles:
