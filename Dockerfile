@@ -15,7 +15,7 @@ RUN pip install --upgrade pip && \
 
 COPY . .
 
-RUN python manage.py migrate
+RUN python src/manage.py migrate
 
 WORKDIR /app/src
 
