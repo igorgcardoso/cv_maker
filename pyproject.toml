@@ -8,7 +8,7 @@ packages = [{ include = "cv_maker" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-django = { extras = ["bcrypt"], version = "^4.1" }
+django = { extras = ["bcrypt"], version = "~4.1" }
 dynaconf = { extras = ["yaml"], version = "^3.1.12" }
 weasyprint = "^58.1"
 django-modeltranslation = "^0.18.11"
