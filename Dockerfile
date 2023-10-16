@@ -14,6 +14,7 @@ RUN pip install --upgrade pip && \
   pip install -r requirements.txt
 
 COPY . .
+COPY /etc/secrets/.secrets.yaml .
 
 RUN python src/manage.py migrate
 
