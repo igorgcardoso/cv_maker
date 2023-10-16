@@ -1,9 +1,12 @@
+from pathlib import Path
 
 from dynaconf import Dynaconf
 
+FILE_DIR = Path(__file__).parent
+
 settings = Dynaconf(
     envvar_prefix="DYNACONF",
-    settings_files=['settings.yaml', '.secrets.yaml'],
+    settings_files=[f'{FILE_DIR}/settings.yaml', f'{FILE_DIR}/.secrets.yaml'],
 )
 
 # `envvar_prefix` = export envvars with `export DYNACONF_FOO=bar`.
