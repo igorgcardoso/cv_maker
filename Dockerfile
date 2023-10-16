@@ -5,7 +5,6 @@ WORKDIR /app
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 ENV DJANGO_ENV production
-ENV SECRETS_FOR_DYNACONF /etc/secrets/.secrets.yaml
 
 RUN apt-get update && apt-get install -y libgtk2.0-0
 
@@ -13,6 +12,8 @@ COPY requirements.txt .
 
 RUN pip install --upgrade pip && \
   pip install -r requirements.txt
+
+COPY .secrets.yaml .
 
 COPY . .
 
