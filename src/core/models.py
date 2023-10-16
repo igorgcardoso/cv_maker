@@ -465,8 +465,8 @@ class UserSocialNetwork(models.Model):
   @property
   def url(self):
     url = self.social_network.base_url
-    if url.endswith('/'):
-      url = url[:-1]
+    if not url.endswith('/'):
+      url += '/'
     if self.social_network.suffix:
       suffix = self.social_network.suffix
       url += suffix.replace('/', '')
