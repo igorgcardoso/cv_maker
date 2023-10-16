@@ -13,7 +13,7 @@ COPY requirements.txt .
 RUN pip install --upgrade pip && \
   pip install -r requirements.txt
 
-RUN --mount=type=secret,id=_secrets_yaml,dst=.secrets.yaml cat .secrets.yaml
+RUN --mount=type=secret,id=_secrets_yaml,dst=.secrets.yaml
 
 COPY . .
 
