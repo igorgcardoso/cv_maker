@@ -14,6 +14,7 @@ RUN pip install --upgrade pip && \
   pip install -r requirements.txt
 
 RUN --mount=type=secret,id=_secrets_yaml,dst=/etc/secrets/.secrets.yaml cat /etc/secrets/.secrets.yaml
+COPY /etc/secrets/.secrets.yaml .
 
 COPY . .
 
