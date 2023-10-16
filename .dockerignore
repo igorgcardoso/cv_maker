@@ -1,5 +1,4 @@
 # Ignore dynaconf secret files
-.secrets.*
 tmp
 __pycache__
 *.sqlite3
