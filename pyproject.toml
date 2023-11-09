@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cv-maker"
-version = "0.1.0"
+version = "1.2.0"
 description = ""
 authors = ["Igor Cardoso <igorgcardoso7@gmail.com>"]
 readme = "README.md"

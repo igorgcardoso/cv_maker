@@ -27,17 +27,34 @@ class LoginForm(forms.Form):
 
 class GenerateForm(forms.Form):
     brief = forms.CharField(max_length=255, required=False, widget=forms.Textarea(attrs={
-        'class': 'resize-none'
+        'class': 'resize-none bg-zinc-800 text-zinc-200 rounded'
     }))
+
+    company_name = forms.CharField(max_length=255, required=False, widget=forms.TextInput(attrs={
+        'class': 'bg-zinc-800 text-zinc-200 rounded'
+    }))
+
+    company_brief = forms.CharField(max_length=255, required=False, widget=forms.Textarea(attrs={
+        'class': 'resize-none bg-zinc-800 text-zinc-200 rounded'
+    }))
+
     language = forms.ModelChoiceField(
         queryset=CVLanguage.objects.all(),
+        widget=forms.Select(attrs={
+            'class': 'bg-zinc-800 text-zinc-200 rounded'
+        })
     )
     role = forms.ModelChoiceField(
-        queryset=None
+        queryset=None,
+        widget=forms.Select(attrs={
+            'class': 'bg-zinc-800 text-zinc-200 rounded'
+        })
     )
     skills = forms.ModelMultipleChoiceField(
         queryset=None,
-        widget=forms.CheckboxSelectMultiple,
+        widget=forms.CheckboxSelectMultiple(attrs={
+            'class': 'text-zinc-200 rounded'
+            }),
     )
 
     def __init__(self, user: User, *args, **kwargs):

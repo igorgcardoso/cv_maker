@@ -33,7 +33,9 @@ def home(request):
         brief = data.get('brief')
         skills = data.get('skills')
         user = request.user
-        cv = user.generate_cv(language, role, brief, skills)
+        company_name = data.get('company_name')
+        company_brief = data.get('company_brief')
+        cv = user.generate_cv(language, role, brief, skills, company_name, company_brief)
         response = FileResponse(open(cv.name, 'rb'), as_attachment=True, filename=f'{user.first_name} {user.last_name} - {language.language}.pdf')
         cv.close()
         return response

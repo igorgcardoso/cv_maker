@@ -5,6 +5,12 @@ global:
     - - pt-br
       - Portuguese (Brazil)
   MODELTRANSLATION_DEFAULT_LANGUAGE: pt-br
+
+development:
+  DEBUG: true
+  ALLOWED_HOSTS:
+    - "*"
+
 production:
   ALLOWED_HOSTS:
     - cv-maker-4btk.onrender.com
