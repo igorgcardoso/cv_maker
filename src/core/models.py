@@ -93,7 +93,7 @@ class User(PermissionsMixin, AbstractBaseUser):
         })
 
         company, _ = Company.objects.get_or_create(name=company_name, defaults={'brief': company_brief})
-        user_brief, _ = Brief.objects.get_or_create(user_role=role, company=company, defaults={'user_brief': brief})
+        user_brief, _ = Brief.objects.get_or_create(user_role=role, company=company, defaults={'brief': brief})
         try:
             Cv.objects.create(user=self, cv_language=language, role=role, brief=user_brief, skills=skills)
         except:
